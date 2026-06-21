@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --color-canvas-cream: #F3F0EE;
+  --color-lifted-cream: #FCFBFA;
+  --color-white: #FFFFFF;
+  --color-soft-bone: #F4F4F4;
+  --color-ink-black: #141413;
+  --color-charcoal: #262627;
+  --color-slate-gray: #696969;
+  --color-granite: #555555;
+  --color-dust-taupe: #D1CDC7;
+  
+  --color-signal-orange: #CF4500;
+  --color-light-orange: #F37338;
+  --color-clay-brown: #9A3A0A;
+  --color-link-blue: #3860BE;
+
+  /* Typography */
+  --font-primary: 'Sofia Sans', 'Inter', sans-serif;
+  --font-fallback: Arial, sans-serif;
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 20px;       /* Signature button radius */
+  --radius-lg: 24px;       /* Pill buttons / tags */
+  --radius-xl: 40px;       /* Container corners / hero frames */
+  --radius-pill: 999px;    /* Navigation / pill cards / slider handles */
+  --radius-circle: 50%;    /* Circular portraits / micro-CTAs */
+
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  /* Shadows (Atmospheric Cushioning) */
+  --shadow-nav: rgba(0, 0, 0, 0.04) 0px 4px 24px 0px;
+  --shadow-lifted: rgba(0, 0, 0, 0.06) 0px 12px 32px 0px;
+  --shadow-hero: rgba(0, 0, 0, 0.08) 0px 24px 48px 0px;
+}

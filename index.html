@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YUL - 복잡한 마이데이터 연동 없이, 30초 카드 대결로 내 금융 누수를 진단하고 최적의 카드 조합을 추천받으세요.">
+  <title>YUL - 개인 맞춤형 카드 혜택 최적화 플랫폼</title>
+  
+  <!-- CSS Stylesheets (Modular Folder Structure) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header>
+    <div class="nav-pill">
+      <a href="#" class="logo">
+        <div class="logo-circles">
+          <div class="logo-circle red"></div>
+          <div class="logo-circle yellow"></div>
+        </div>
+        <span>YUL</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">주요 기능</a></li>
+        <li><a href="#duel">카드 대결</a></li>
+        <li><a href="#calculator">누수 계산기</a></li>
+        <li><a href="#pipeline">SACC 파이프라인</a></li>
+        <li><a href="#market">경쟁사 비교</a></li>
+        <li><a href="#roadmap">로드맵</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="#duel" class="btn-primary">시작하기</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="container">
+      <div class="hero-stadium">
+        <div class="hero-grid-2col">
+          <div class="hero-text-left">
+            <span class="eyebrow" style="color: var(--color-light-orange); margin-bottom: var(--space-2);">• 30초 내 금융 누수 차단</span>
+            <h1>내 신용카드가<br>진짜 최고일까?</h1>
+            <p>마이데이터 연동 없이도 30초 카드 대결(Card Duel)을 통해 연간 최대 60만 원의 숨은 금융 누수를 진단합니다.</p>
+            <div class="hero-actions">
+              <a href="#duel" class="btn-primary">30초 대결 시작하기</a>
+              <a href="#calculator" class="btn-secondary">나의 금융 누수 계산</a>
+            </div>
+          </div>
+          <div class="hero-visual-right">
+            <div class="hero-floating-cards">
+              <img src="assets/images/신한카드_MR_life_세로.png" alt="신한카드" class="hero-card card-left">
+              <img src="assets/images/현대카드_M_Edition3.png" alt="현대카드" class="hero-card card-right">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition (Hook & Convert) -->
+    <section id="features" class="container">
+      <div class="ghost-watermark">YUL</div>
+      <div style="text-align: center; margin-bottom: var(--space-8); position: relative; z-index: 1;">
+        <span class="eyebrow">• FEATURES</span>
+        <h2>핵심 서비스 가치</h2>
+        <p style="color: var(--color-slate-gray); max-width: 600px; margin: 0 auto; margin-top: var(--space-2);">
+          개인정보 유출 리스크와 번거로운 본인인증 없이 점진적으로 혜택 데이터의 정확도를 높여갑니다.
+        </p>
+      </div>
+
+      <div class="info-card-grid">
+        <div class="glass-card">
+          <div class="glass-card-num">15%</div>
+          <h3>초간편 이탈율 관리</h3>
+          <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
+            마이데이터 연동 인증 과정에서 이탈하는 68%의 고객을 웹 폼 방식으로 포착하여 이탈율을 15% 이하로 통제합니다.
+          </p>
+        </div>
+        <div class="glass-card">
+          <div class="glass-card-num">90%</div>
+          <h3>점진적 정보 심화</h3>
+          <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
+            대결 결과에 흥미를 느끼면 소비 금액 데이터를 자발적으로 심화 입력하여 마이데이터 연동에 준하는 정확도를 확보합니다.
+          </p>
+        </div>
+        <div class="glass-card">
+          <div class="glass-card-num">40x</div>
+          <h3>건전한 유닛 이코노미</h3>
+          <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
+            뽐뿌, 디시 등 재테크 커뮤니티 바이럴로 획득 비용(CAC)을 낮추고 고품질 리드 제공을 통해 연간 LTV 대비 극대화된 수익을 달성합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Duel Widget Section -->
+    <section id="duel" style="background-color: var(--color-lifted-cream);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-8);">
+          <span class="eyebrow">• HOOK</span>
+          <h2>30초 카드 대결 (Card Duel)</h2>
+          <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
+            두 카드를 선택하고 가장 혜택을 비교해보고 싶은 소비 항목을 골라 즉시 대결 결과를 확인하세요.
+          </p>
+        </div>
+
+        <div class="duel-widget">
+          <div class="duel-setup">
+            <div class="card-select-panel">
+              <label for="card1-select">현재 내 카드</label>
+              <div class="duel-setup-card-visual">
+                <img id="card1-visual-img" src="assets/images/card_black_gold.png" alt="현재 내 카드 비주얼" class="setup-card-img">
+              </div>
+              <select id="card1-select" class="card-select"></select>
+            </div>
+            
+            <div class="duel-vs-circle">VS</div>
+            
+            <div class="card-select-panel">
+              <label for="card2-select">비교할 새 카드</label>
+              <div class="duel-setup-card-visual">
+                <img id="card2-visual-img" src="assets/images/card_orange_red.png" alt="비교할 카드 비주얼" class="setup-card-img">
+              </div>
+              <select id="card2-select" class="card-select"></select>
+            </div>
+          </div>
+
+          <div class="duel-categories">
+            <p>비교할 소비 영역 (1순위)</p>
+            <div class="category-options">
+              <button class="category-chip active" data-category="food"><i class="fa-solid fa-utensils"></i> 외식 / 식비</button>
+              <button class="category-chip" data-category="shopping"><i class="fa-solid fa-bag-shopping"></i> 쇼핑</button>
+              <button class="category-chip" data-category="fuel"><i class="fa-solid fa-gas-pump"></i> 주유</button>
+              <button class="category-chip" data-category="transport"><i class="fa-solid fa-bus"></i> 대중교통</button>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <button id="start-duel-btn" class="btn-primary">대결 시작하기 <i class="fa-solid fa-bolt"></i></button>
+          </div>
+
+          <!-- Duel Result Container -->
+          <div class="duel-result-wrapper" id="duel-result-wrapper" style="display: none;">
+            <div class="duel-result-cards">
+              <div id="c1-card" class="duel-result-card blue">
+                <div class="duel-stamp-wrapper" id="c1-stamp-wrapper"></div>
+                <div class="card-score">
+                  <div class="card-score-title" id="c1-name">카드 1</div>
+                  <div class="card-score-value" id="c1-val">₩0</div>
+                </div>
+              </div>
+
+              <div id="c2-card" class="duel-result-card purple">
+                <div class="duel-stamp-wrapper" id="c2-stamp-wrapper"></div>
+                <div class="card-score">
+                  <div class="card-score-title" id="c2-name">카드 2</div>
+                  <div class="card-score-value" id="c2-val">₩0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="duel-vs-verdict">
+              <div class="duel-verdict-title" id="verdict-text">대결 결과</div>
+              <p style="color: var(--color-slate-gray);" id="verdict-diff">혜택 차이 분석 중...</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Savings Calculator Section -->
+    <section id="calculator" class="container">
+      <div style="text-align: center; margin-bottom: var(--space-8);">
+        <span class="eyebrow">• CONVERT</span>
+        <h2>나의 금융 누수 진단하기</h2>
+        <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
+          매월 지출하는 대략적인 비용을 슬라이더로 조절하여, 비최적화 카드 사용으로 새고 있는 돈을 실시간으로 확인해보세요.
+        </p>
+      </div>
+
+      <div class="calculator-widget">
+        <div class="calc-sliders">
+          <div class="slider-group">
+            <div class="slider-info">
+              <span class="slider-title"><i class="fa-solid fa-utensils"></i> 외식 / 식비</span>
+              <span class="slider-val" id="val-food">30만 원</span>
+            </div>
+            <input type="range" id="slider-food" class="calc-slider" min="0" max="150" value="40">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-info">
+              <span class="slider-title"><i class="fa-solid fa-bag-shopping"></i> 온라인 쇼핑</span>
+              <span class="slider-val" id="val-shopping">20만 원</span>
+            </div>
+            <input type="range" id="slider-shopping" class="calc-slider" min="0" max="150" value="30">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-info">
+              <span class="slider-title"><i class="fa-solid fa-gas-pump"></i> 주유 / 자동차</span>
+              <span class="slider-val" id="val-fuel">10만 원</span>
+            </div>
+            <input type="range" id="slider-fuel" class="calc-slider" min="0" max="100" value="15">
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-info">
+              <span class="slider-title"><i class="fa-solid fa-bus"></i> 대중교통 / 택시</span>
+              <span class="slider-val" id="val-transport">5만 원</span>
+            </div>
+            <input type="range" id="slider-transport" class="calc-slider" min="0" max="50" value="10">
+          </div>
+        </div>
+
+        <div class="calc-report">
+          <div>
+            <div class="report-header">진단 리포트</div>
+            <div class="report-leakage">
+              <div class="report-lbl">매월 예상 카드 지출액</div>
+              <div class="report-val" id="total-spend">₩950,000</div>
+            </div>
+            <div class="report-leakage">
+              <div class="report-lbl">월별 새어나가는 금융 누수액 (평균 2.5% 차이)</div>
+              <div class="report-val" id="leakage-val">₩23,750</div>
+            </div>
+          </div>
+          <div class="calc-report-divider">
+            <div class="report-lbl"><strong>최적 카드 조합 리밸런싱 시 연간 세이브 가능액</strong></div>
+            <div class="report-val saving" id="savings-val">₩285,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SACC Pipeline (Orbit-inspired design) -->
+    <section id="pipeline" style="background-color: var(--color-lifted-cream); overflow: hidden; position: relative;">
+      <div class="ghost-watermark">SACC PIPELINE</div>
+      <div class="container" style="position: relative; z-index: 1;">
+        <div style="text-align: center; margin-bottom: var(--space-8);">
+          <span class="eyebrow">• DATA INTEGRITY</span>
+          <h2>반자동 크롤링 및 검증 파이프라인 (SACC)</h2>
+          <p style="color: var(--color-slate-gray); max-width: 600px; margin: var(--space-2) auto 0;">
+            변동이 잦은 신용카드 혜택 데이터의 무결성을 유지하기 위해 수집부터 알림까지 검증 파이프라인을 가동합니다.
+          </p>
+        </div>
+
+        <div class="sacc-constellation">
+          <!-- Step 1 -->
+          <div class="sacc-step-node">
+            <div class="portrait-circle-wrapper">
+              <div class="portrait-circle accent-1">
+                <i class="fa-solid fa-magnifying-glass font-icon"></i>
+              </div>
+              <button class="satellite-cta" aria-label="1단계 설명보기">01</button>
+            </div>
+            <h3>변동 혜택 추적 크롤러</h3>
+            <p>국내 주요 카드사의 약관 변경 공지 및 신규 출시 내역을 실시간 수집하는 전용 웹 크롤러 가동</p>
+          </div>
+
+          <!-- Responsive Connector Arrow -->
+          <div class="sacc-connector">
+            <div class="sacc-connector-line"></div>
+            <i class="fa-solid fa-chevron-right sacc-connector-arrow"></i>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="sacc-step-node">
+            <div class="portrait-circle-wrapper">
+              <div class="portrait-circle accent-2">
+                <i class="fa-solid fa-scale-balanced font-icon"></i>
+              </div>
+              <button class="satellite-cta" aria-label="2단계 설명보기">02</button>
+            </div>
+            <h3>관리자 검증 대시보드</h3>
+            <p>크롤링된 조건문과 피킹률 계산 알고리즘의 유효성을 승인 검증하여 100% 데이터 신뢰성 달성</p>
+          </div>
+
+          <!-- Responsive Connector Arrow -->
+          <div class="sacc-connector">
+            <div class="sacc-connector-line"></div>
+            <i class="fa-solid fa-chevron-right sacc-connector-arrow"></i>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="sacc-step-node">
+            <div class="portrait-circle-wrapper">
+              <div class="portrait-circle accent-3">
+                <i class="fa-solid fa-bell font-icon"></i>
+              </div>
+              <button class="satellite-cta" aria-label="3단계 설명보기">03</button>
+            </div>
+            <h3>리밸런싱 알림 시스템</h3>
+            <p>보유 카드의 혜택 단종 또는 변경 감지 시 즉각 알림을 송신하여 대체 최적 카드를 추천</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Comparison -->
+    <section id="market" class="container">
+      <div style="text-align: center; margin-bottom: var(--space-8);">
+        <span class="eyebrow">• COMPETITORS</span>
+        <h2>경쟁사 비교 분석</h2>
+        <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
+          기존 금융 플랫폼의 인증 장벽과 추천 단점을 돌파하는 YUL만의 강점을 확인하세요.
+        </p>
+      </div>
+
+      <div class="comparison-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>분석 항목</th>
+              <th>YUL</th>
+              <th>마이데이터 자산관리 앱 (Toss / 뱅크샐러드)</th>
+              <th>카드 비교 전문 사이트 (카드고릴라)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>주요 기능</strong></td>
+              <td data-label="YUL">카드 교체 의사결정 시뮬레이터 (Proactive)</td>
+              <td data-label="마이데이터 자산관리 앱">사후 소비 통계 리포트 (Reactive)</td>
+              <td data-label="카드 비교 사이트">수동 랭킹 및 정보 나열 (Passive)</td>
+            </tr>
+            <tr>
+              <td><strong>수집 장벽</strong></td>
+              <td data-label="YUL"><strong>MyData-Free (웹 폼 방식)</strong></td>
+              <td data-label="마이데이터 자산관리 앱">금융 공인인증 필수 (인프라 비용 억 단위)</td>
+              <td data-label="카드 비교 사이트">개인 소비 패턴 기반 수집 없음</td>
+            </tr>
+            <tr>
+              <td><strong>가입 이탈율</strong></td>
+              <td data-label="YUL"><strong>15% 이하 (본인인증 미요구)</strong></td>
+              <td data-label="마이데이터 자산관리 앱">평균 68% (연동 허들로 인한 이탈)</td>
+              <td data-label="카드 비교 사이트">해당 없음 (비개인화)</td>
+            </tr>
+            <tr>
+              <td><strong>수익 모델</strong></td>
+              <td data-label="YUL">카드 가입 의향 리드 중개 (CPL)</td>
+              <td data-label="마이데이터 자산관리 앱">발급 완료 기준 대행료 (CPA)</td>
+              <td data-label="카드 비교 사이트">카드 광고 노출 수수료</td>
+            </tr>
+            <tr>
+              <td><strong>추천 신뢰성</strong></td>
+              <td data-label="YUL">SACC 파이프라인 검증 100% 공식 데이터</td>
+              <td data-label="마이데이터 자산관리 앱">실시간 금융 데이터 연동</td>
+              <td data-label="카드 비교 사이트">카드사 광고비 집행 중심 랭킹</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Team and Roadmap -->
+    <section id="roadmap" style="background-color: var(--color-lifted-cream);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: var(--space-8);">
+          <span class="eyebrow">• ROADMAP</span>
+          <h2>개발 및 추진 일정</h2>
+          <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
+            1인 풀스택 개발자의 실행력으로 기획부터 CPL 수익화 검증까지 기민하게 움직입니다.
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
+            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.06~07</div>
+            <div>
+              <h3>엔진 설계 및 알고리즘 구현</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">국내 인기 신용카드 상위 100종의 혜택 공식 DB 구축 및 피킹률 대결 알고리즘 개발</p>
+            </div>
+          </div>
+          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
+            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.07~08</div>
+            <div>
+              <h3>MVP 제품 구현</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">카드 대결 UI, 누수 진단 보고서 시뮬레이터 개발 및 기획 검증용 랜딩 페이지 론칭</p>
+            </div>
+          </div>
+          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
+            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.09~10</div>
+            <div>
+              <h3>베타 테스트 및 트랙션 증명</h3>
+              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">재테크 고관여 체리피커 유저 대상 클로즈드 테스트 진행 및 CPL 전환 지표 50건 달성</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top-container">
+        <div class="footer-top">
+          <h2>금융 누수가 제로가 되는 날까지,<br>YUL이 금융 최적화 리밸런싱을 함께합니다.</h2>
+        </div>
+        <div class="footer-newsletter">
+          <h5>소식 구독하기</h5>
+          <p>새로운 카드 혜택 업데이트 및 금융 최적화 팁을 가장 먼저 받아보세요.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('구독해주셔서 감사합니다!');">
+            <input type="email" placeholder="이메일 주소 입력" required class="newsletter-input">
+            <button type="submit" class="btn-primary-compact">구독</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-info">
+          <span>© 2026 YUL Inc. All rights reserved.</span>
+          <span class="footer-brand-desc">복잡한 금융 데이터와 규제를 우회하여 린(Lean)하게 가치를 검증합니다.</span>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+          <button class="footer-lang-selector">한국어 (KR) <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/duel.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
