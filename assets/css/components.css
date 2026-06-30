@@ -1051,3 +1051,88 @@ table.comparison-table td strong {
     margin-right: var(--space-2);
   }
 }
+
+/* Waitlist (사전 예약) Styles */
+.waitlist-wrapper {
+  margin-top: var(--space-4);
+}
+
+.waitlist-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.waitlist-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.waitlist-icon {
+  position: absolute;
+  left: var(--space-3);
+  color: var(--color-slate-gray);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.waitlist-input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-ink-black);
+  background-color: var(--color-white);
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--color-ink-black);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.waitlist-input:focus {
+  border-color: var(--color-light-orange);
+  box-shadow: 0 0 0 3px rgba(247, 158, 27, 0.15);
+}
+
+.waitlist-agreement {
+  margin-top: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-light-orange);
+  cursor: pointer;
+}
+
+.agreement-text {
+  font-size: 13px;
+  color: var(--color-slate-gray);
+  line-height: 1.2;
+}
+
+.waitlist-success {
+  animation: waitlistFadeIn 0.4s ease forwards;
+}
+
+@keyframes waitlistFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

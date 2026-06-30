@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="YUL - 복잡한 마이데이터 연동 없이, 30초 카드 대결로 내 금융 누수를 진단하고 최적의 카드 조합을 추천받으세요.">
   <title>YUL - 개인 맞춤형 카드 혜택 최적화 플랫폼</title>
-  
+
   <!-- CSS Stylesheets (Modular Folder Structure) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
 </head>
+
 <body>
 
   <!-- Floating Navigation Bar -->
@@ -24,16 +26,15 @@
         </div>
         <span>YUL</span>
       </a>
-      
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#features">주요 기능</a></li>
         <li><a href="#duel">카드 대결</a></li>
         <li><a href="#calculator">누수 계산기</a></li>
-        <li><a href="#pipeline">SACC 파이프라인</a></li>
         <li><a href="#market">경쟁사 비교</a></li>
-        <li><a href="#roadmap">로드맵</a></li>
+        <li><a href="#waitlist">사전 예약</a></li>
       </ul>
-      
+
       <div class="nav-actions">
         <a href="#duel" class="btn-primary">시작하기</a>
         <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
@@ -51,7 +52,8 @@
       <div class="hero-stadium">
         <div class="hero-grid-2col">
           <div class="hero-text-left">
-            <span class="eyebrow" style="color: var(--color-light-orange); margin-bottom: var(--space-2);">• 30초 내 금융 누수 차단</span>
+            <span class="eyebrow" style="color: var(--color-light-orange); margin-bottom: var(--space-2);">• 30초 내 금융 누수
+              차단</span>
             <h1>내 신용카드가<br>진짜 최고일까?</h1>
             <p>마이데이터 연동 없이도 30초 카드 대결(Card Duel)을 통해 연간 최대 60만 원의 숨은 금융 누수를 진단합니다.</p>
             <div class="hero-actions">
@@ -70,36 +72,36 @@
     </section>
 
     <!-- Value Proposition (Hook & Convert) -->
-    <section id="features" class="container">
-      <div class="ghost-watermark">YUL</div>
+    <section id="features" class="container" style="margin-bottom:30px;">
+      <div class=" ghost-watermark">YUL</div>
       <div style="text-align: center; margin-bottom: var(--space-8); position: relative; z-index: 1;">
         <span class="eyebrow">• FEATURES</span>
         <h2>핵심 서비스 가치</h2>
         <p style="color: var(--color-slate-gray); max-width: 600px; margin: 0 auto; margin-top: var(--space-2);">
-          개인정보 유출 리스크와 번거로운 본인인증 없이 점진적으로 혜택 데이터의 정확도를 높여갑니다.
+          복잡한 가입 과정과 본인인증 없이 안전하고 확실하게 신용카드 혜택을 극대화합니다.
         </p>
       </div>
 
       <div class="info-card-grid">
         <div class="glass-card">
-          <div class="glass-card-num">15%</div>
-          <h3>초간편 이탈율 관리</h3>
+          <div class="glass-card-num">30초</div>
+          <h3>초간편 카드 대결</h3>
           <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
-            마이데이터 연동 인증 과정에서 이탈하는 68%의 고객을 웹 폼 방식으로 포착하여 이탈율을 15% 이하로 통제합니다.
+            현재 쓰는 카드와 바꾸고 싶은 카드를 선택해 30초 만에 어느 카드가 혜택이 더 큰지 즉시 대결 결과를 확인하세요.
           </p>
         </div>
         <div class="glass-card">
-          <div class="glass-card-num">90%</div>
-          <h3>점진적 정보 심화</h3>
+          <div class="glass-card-num">0%</div>
+          <h3>개인정보 노출 제로</h3>
           <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
-            대결 결과에 흥미를 느끼면 소비 금액 데이터를 자발적으로 심화 입력하여 마이데이터 연동에 준하는 정확도를 확보합니다.
+            귀찮은 공인인증서 로그인이나 마이데이터 연동 없이, 100% 안전하게 어떠한 금융 개인정보도 수집하지 않고 혜택을 분석합니다.
           </p>
         </div>
         <div class="glass-card">
-          <div class="glass-card-num">40x</div>
-          <h3>건전한 유닛 이코노미</h3>
+          <div class="glass-card-num">60만</div>
+          <h3>연간 금융 누수 차단</h3>
           <p style="font-size: 15px; color: var(--color-granite); line-height: 1.5; margin-top: 10px;">
-            뽐뿌, 디시 등 재테크 커뮤니티 바이럴로 획득 비용(CAC)을 낮추고 고품질 리드 제공을 통해 연간 LTV 대비 극대화된 수익을 달성합니다.
+            나의 소비 카테고리별 대략적인 지출액을 조절해 복잡한 카드 실적 조건과 제외 항목까지 고려한 최적의 혜택을 찾아냅니다.
           </p>
         </div>
       </div>
@@ -109,7 +111,7 @@
     <section id="duel" style="background-color: var(--color-lifted-cream);">
       <div class="container">
         <div style="text-align: center; margin-bottom: var(--space-8);">
-          <span class="eyebrow">• HOOK</span>
+          <span class="eyebrow">DUEL</span>
           <h2>30초 카드 대결 (Card Duel)</h2>
           <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
             두 카드를 선택하고 가장 혜택을 비교해보고 싶은 소비 항목을 골라 즉시 대결 결과를 확인하세요.
@@ -121,17 +123,19 @@
             <div class="card-select-panel">
               <label for="card1-select">현재 내 카드</label>
               <div class="duel-setup-card-visual">
-                <img id="card1-visual-img" src="assets/images/card_black_gold.png" alt="현재 내 카드 비주얼" class="setup-card-img">
+                <img id="card1-visual-img" src="assets/images/card_black_gold.png" alt="현재 내 카드 비주얼"
+                  class="setup-card-img">
               </div>
               <select id="card1-select" class="card-select"></select>
             </div>
-            
+
             <div class="duel-vs-circle">VS</div>
-            
+
             <div class="card-select-panel">
               <label for="card2-select">비교할 새 카드</label>
               <div class="duel-setup-card-visual">
-                <img id="card2-visual-img" src="assets/images/card_orange_red.png" alt="비교할 카드 비주얼" class="setup-card-img">
+                <img id="card2-visual-img" src="assets/images/card_orange_red.png" alt="비교할 카드 비주얼"
+                  class="setup-card-img">
               </div>
               <select id="card2-select" class="card-select"></select>
             </div>
@@ -140,8 +144,10 @@
           <div class="duel-categories">
             <p>비교할 소비 영역 (1순위)</p>
             <div class="category-options">
-              <button class="category-chip active" data-category="food"><i class="fa-solid fa-utensils"></i> 외식 / 식비</button>
-              <button class="category-chip" data-category="shopping"><i class="fa-solid fa-bag-shopping"></i> 쇼핑</button>
+              <button class="category-chip active" data-category="food"><i class="fa-solid fa-utensils"></i> 외식 /
+                식비</button>
+              <button class="category-chip" data-category="shopping"><i class="fa-solid fa-bag-shopping"></i>
+                쇼핑</button>
               <button class="category-chip" data-category="fuel"><i class="fa-solid fa-gas-pump"></i> 주유</button>
               <button class="category-chip" data-category="transport"><i class="fa-solid fa-bus"></i> 대중교통</button>
             </div>
@@ -182,9 +188,9 @@
     </section>
 
     <!-- Savings Calculator Section -->
-    <section id="calculator" class="container">
+    <section id="calculator" class="container" style="margin-top: 30px; margin-bottom: 30px;">
       <div style="text-align: center; margin-bottom: var(--space-8);">
-        <span class="eyebrow">• CONVERT</span>
+        <span class="eyebrow">CONVERT</span>
         <h2>나의 금융 누수 진단하기</h2>
         <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
           매월 지출하는 대략적인 비용을 슬라이더로 조절하여, 비최적화 카드 사용으로 새고 있는 돈을 실시간으로 확인해보세요.
@@ -246,72 +252,9 @@
       </div>
     </section>
 
-    <!-- SACC Pipeline (Orbit-inspired design) -->
-    <section id="pipeline" style="background-color: var(--color-lifted-cream); overflow: hidden; position: relative;">
-      <div class="ghost-watermark">SACC PIPELINE</div>
-      <div class="container" style="position: relative; z-index: 1;">
-        <div style="text-align: center; margin-bottom: var(--space-8);">
-          <span class="eyebrow">• DATA INTEGRITY</span>
-          <h2>반자동 크롤링 및 검증 파이프라인 (SACC)</h2>
-          <p style="color: var(--color-slate-gray); max-width: 600px; margin: var(--space-2) auto 0;">
-            변동이 잦은 신용카드 혜택 데이터의 무결성을 유지하기 위해 수집부터 알림까지 검증 파이프라인을 가동합니다.
-          </p>
-        </div>
-
-        <div class="sacc-constellation">
-          <!-- Step 1 -->
-          <div class="sacc-step-node">
-            <div class="portrait-circle-wrapper">
-              <div class="portrait-circle accent-1">
-                <i class="fa-solid fa-magnifying-glass font-icon"></i>
-              </div>
-              <button class="satellite-cta" aria-label="1단계 설명보기">01</button>
-            </div>
-            <h3>변동 혜택 추적 크롤러</h3>
-            <p>국내 주요 카드사의 약관 변경 공지 및 신규 출시 내역을 실시간 수집하는 전용 웹 크롤러 가동</p>
-          </div>
-
-          <!-- Responsive Connector Arrow -->
-          <div class="sacc-connector">
-            <div class="sacc-connector-line"></div>
-            <i class="fa-solid fa-chevron-right sacc-connector-arrow"></i>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="sacc-step-node">
-            <div class="portrait-circle-wrapper">
-              <div class="portrait-circle accent-2">
-                <i class="fa-solid fa-scale-balanced font-icon"></i>
-              </div>
-              <button class="satellite-cta" aria-label="2단계 설명보기">02</button>
-            </div>
-            <h3>관리자 검증 대시보드</h3>
-            <p>크롤링된 조건문과 피킹률 계산 알고리즘의 유효성을 승인 검증하여 100% 데이터 신뢰성 달성</p>
-          </div>
-
-          <!-- Responsive Connector Arrow -->
-          <div class="sacc-connector">
-            <div class="sacc-connector-line"></div>
-            <i class="fa-solid fa-chevron-right sacc-connector-arrow"></i>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="sacc-step-node">
-            <div class="portrait-circle-wrapper">
-              <div class="portrait-circle accent-3">
-                <i class="fa-solid fa-bell font-icon"></i>
-              </div>
-              <button class="satellite-cta" aria-label="3단계 설명보기">03</button>
-            </div>
-            <h3>리밸런싱 알림 시스템</h3>
-            <p>보유 카드의 혜택 단종 또는 변경 감지 시 즉각 알림을 송신하여 대체 최적 카드를 추천</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Competitive Comparison -->
-    <section id="market" class="container">
+    <section id="market" class="container" style="margin-top: 30px; margin-bottom: 30px;">
       <div style="text-align: center; margin-bottom: var(--space-8);">
         <span class="eyebrow">• COMPETITORS</span>
         <h2>경쟁사 비교 분석</h2>
@@ -366,37 +309,50 @@
       </div>
     </section>
 
-    <!-- Team and Roadmap -->
-    <section id="roadmap" style="background-color: var(--color-lifted-cream);">
+    <!-- Waitlist (사전 예약) Section -->
+    <section id="waitlist" style="background-color: var(--color-lifted-cream);">
       <div class="container">
         <div style="text-align: center; margin-bottom: var(--space-8);">
-          <span class="eyebrow">• ROADMAP</span>
-          <h2>개발 및 추진 일정</h2>
-          <p style="color: var(--color-slate-gray); max-width: 500px; margin: var(--space-2) auto 0;">
-            1인 풀스택 개발자의 실행력으로 기획부터 CPL 수익화 검증까지 기민하게 움직입니다.
+          <span class="eyebrow">PRE-REGISTER</span>
+          <h2>YUL 출시 알림 사전 예약</h2>
+          <p style="color: var(--color-slate-gray); max-width: 600px; margin: var(--space-2) auto 0;">
+            귀찮은 본인인증 없이 30초 만에 끝나는 신용카드 혜택 비교, YUL의 정식 출시 소식을 가장 먼저 받아보세요.
           </p>
         </div>
 
-        <div style="max-width: 800px; margin: 0 auto;">
-          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
-            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.06~07</div>
-            <div>
-              <h3>엔진 설계 및 알고리즘 구현</h3>
-              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">국내 인기 신용카드 상위 100종의 혜택 공식 DB 구축 및 피킹률 대결 알고리즘 개발</p>
-            </div>
-          </div>
-          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
-            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.07~08</div>
-            <div>
-              <h3>MVP 제품 구현</h3>
-              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">카드 대결 UI, 누수 진단 보고서 시뮬레이터 개발 및 기획 검증용 랜딩 페이지 론칭</p>
-            </div>
-          </div>
-          <div class="glass-card" style="margin-bottom: var(--space-3); display: flex; gap: var(--space-3); align-items: center;">
-            <div style="font-size: 24px; font-weight: 700; color: var(--color-light-orange); min-width: 140px;">2026.09~10</div>
-            <div>
-              <h3>베타 테스트 및 트랙션 증명</h3>
-              <p style="margin: 0; font-size: 15px; color: var(--color-slate-gray);">재테크 고관여 체리피커 유저 대상 클로즈드 테스트 진행 및 CPL 전환 지표 50건 달성</p>
+        <div class="waitlist-wrapper" style="max-width: 550px; margin: 0 auto;">
+          <div class="glass-card waitlist-card" style="padding: var(--space-6);">
+            <form id="waitlist-form" class="waitlist-form">
+              <div class="waitlist-input-group">
+                <i class="fa-regular fa-envelope waitlist-icon"></i>
+                <input type="email" id="waitlist-email" name="email" placeholder="이메일 주소를 입력하세요 (example@email.com)" required
+                  class="waitlist-input">
+              </div>
+
+              <div class="waitlist-agreement">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="waitlist-privacy" checked required>
+                  <span class="checkmark"></span>
+                  <span class="agreement-text">개인정보 수집 및 이용 동의 (알림 발송용, 필수)</span>
+                </label>
+              </div>
+
+              <button type="submit" id="waitlist-submit-btn" class="btn-primary"
+                style="width: 100%; justify-content: center; margin-top: var(--space-3);">
+                사전 예약하고 알림 받기 <i class="fa-solid fa-paper-plane" style="margin-left: 6px;"></i>
+              </button>
+            </form>
+
+            <div id="waitlist-success" class="waitlist-success"
+              style="display: none; text-align: center; padding: var(--space-4) 0;">
+              <div class="success-icon-wrapper" style="margin-bottom: var(--space-3);">
+                <i class="fa-regular fa-circle-check" style="font-size: 48px; color: var(--color-light-orange);"></i>
+              </div>
+              <h3 style="margin-bottom: var(--space-2);">사전 예약이 완료되었습니다!</h3>
+              <p style="color: var(--color-slate-gray); font-size: 15px; line-height: 1.6; margin: 0;">
+                작성하신 이메일(<strong id="submitted-email" style="color: var(--color-ink-black);"></strong>)로 서비스 출시 시점에 맞춰
+                가장 먼저 알림을 보내드리겠습니다. 참여해 주셔서 감사합니다.
+              </p>
             </div>
           </div>
         </div>
@@ -406,32 +362,15 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <div class="footer-top-container">
-        <div class="footer-top">
-          <h2>금융 누수가 제로가 되는 날까지,<br>YUL이 금융 최적화 리밸런싱을 함께합니다.</h2>
-        </div>
-        <div class="footer-newsletter">
-          <h5>소식 구독하기</h5>
-          <p>새로운 카드 혜택 업데이트 및 금융 최적화 팁을 가장 먼저 받아보세요.</p>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('구독해주셔서 감사합니다!');">
-            <input type="email" placeholder="이메일 주소 입력" required class="newsletter-input">
-            <button type="submit" class="btn-primary-compact">구독</button>
-          </form>
-        </div>
-      </div>
-      
-      <div class="footer-divider"></div>
-      
-      <div class="footer-bottom">
-        <div class="footer-bottom-info">
-          <span>© 2026 YUL Inc. All rights reserved.</span>
-          <span class="footer-brand-desc">복잡한 금융 데이터와 규제를 우회하여 린(Lean)하게 가치를 검증합니다.</span>
-        </div>
-        <div class="footer-bottom-links">
-          <a href="#">개인정보처리방침</a>
-          <a href="#">이용약관</a>
-          <button class="footer-lang-selector">한국어 (KR) <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></button>
+    <div class="container" style="text-align: center;">
+      <div style="max-width: 600px; margin: 0 auto; line-height: 1.6;">
+        <p style="color: var(--color-canvas-cream); font-weight: 500; font-size: 20px; margin-bottom: var(--space-2);">YUL (율)</p>
+        <p style="font-size: 14px; color: var(--color-slate-gray); margin-bottom: var(--space-4);">
+          서비스 관련 문의사항이나 제안은 아래 이메일로 보내주시기 바랍니다.<br>
+          이메일: <a href="mailto:taylor.kim6873@gmail.com" style="color: var(--color-light-orange); text-decoration: none; font-weight: 500;">taylor.kim6873@gmail.com</a>
+        </p>
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: var(--space-4); margin-top: var(--space-4); font-size: 13px; color: var(--color-slate-gray);">
+          <span>© 2026 YUL. All rights reserved.</span>
         </div>
       </div>
     </div>
@@ -443,4 +382,5 @@
   <script src="assets/js/calculator.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
